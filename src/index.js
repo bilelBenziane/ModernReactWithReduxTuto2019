@@ -7,7 +7,10 @@ import faker from 'faker';
 const App = () => {
     return (
         <div className="ui container comments">
-            <CommentDetail author="Dandan"/>
+            <CommentDetail author="Dandan" 
+                            timeAgo="Today at 4:00PM" 
+                            content="the content "
+                            avatar={faker.image.avatar()}/>
         </div>
     );
 };
